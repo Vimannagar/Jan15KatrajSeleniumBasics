@@ -8,6 +8,7 @@ public class LaunchBrowser {
 	
 	public static void main(String[] args) {
 		
+		
 		System.setProperty("webdriver.chrome.driver", "E:\\desktop\\Katraj\\15 Jan\\Selenium\\chromedriver.exe");
 		
 		ChromeDriver d = new ChromeDriver();// chrome browser will get open
