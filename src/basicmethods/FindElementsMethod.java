@@ -24,17 +24,33 @@ System.setProperty("webdriver.chrome.driver", "E:\\desktop\\Katraj\\15 Jan\\Sele
 		
 	List<WebElement> daydropdown = driver.findElements(By.xpath("//select[@id='day']//option"));
 
-		for(WebElement value:daydropdown)
+	
+	
+//		for(WebElement value:daydropdown)
+//		{
+//			String d = value.getText();
+//			
+//			System.out.println(d);
+//			
+//			if(d.equals("18"))
+//			{
+//				value.click();
+//			}
+//		}
+		
+		
+		int numberofoptions = daydropdown.size();// size method is used to get the total number of webelements that we have located.
+		
+		
+		for(int i=0; i<numberofoptions; i++ )
 		{
-			String d = value.getText();
+			String dayvalue = daydropdown.get(i).getText();
 			
-			System.out.println(d);
+			System.out.println(dayvalue);
 			
-			if(d.equals("18"))
-			{
-				value.click();
-			}
 		}
+		
+		
 		
 	
 		
