@@ -1,14 +1,18 @@
 package locators;
 
+import java.io.IOException;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
+import utility.ScreenShot;
+
 public class DynamicXpath {
 	
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws IOException {
 		System.setProperty("webdriver.chrome.driver", "E:\\desktop\\Katraj\\15 Jan\\Selenium\\chromedriver.exe");
 		
 		
@@ -36,6 +40,8 @@ public class DynamicXpath {
 		driver.findElement(By.xpath("(//input[contains(@id,'ohrmList_chkSelectRecord_')])["+i+"]")).click();
 		
 		}
+		
+		
 		
 		
 	}
