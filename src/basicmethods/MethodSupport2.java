@@ -42,6 +42,12 @@ System.out.println(isenabletoperformaction);
 	
 	System.out.println(ischecked);
 	
+	boolean isvisible = checkbox.isDisplayed();
+	
+	System.out.println(isvisible);
+	
+	
+	
 	}
 
 }
