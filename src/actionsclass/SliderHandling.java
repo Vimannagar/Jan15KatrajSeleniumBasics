@@ -30,7 +30,7 @@ public class SliderHandling {
 		act.clickAndHold(slidecomponent).moveByOffset(250, 0).moveByOffset(-100, 0).release().build().perform();
 		
 		
-		driver.switchTo().parentFrame();
+		driver.switchTo().parentFrame();// to move out from the iframe to the main frame
 		
 		driver.findElement(By.xpath("//*[text()='Droppable']")).click();
 		
