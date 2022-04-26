@@ -2,27 +2,14 @@ package testngdiscussion;
 
 import org.testng.annotations.Test;
 
-public class SingleClassExecution2 {
-	
-	@Test(priority = 2)
-	public void login()
-	{
-		System.out.println("Login to application");
-	}
-	
-	@Test(priority = 56)
-	public void dashBoard()
-	{
-		System.out.println("DashBoard Test case");
-	}
-	
-	@Test(priority = -400)
+public class TestClass2 {
+	@Test
 	public void profile()
 	{
 		System.out.println("Profile Test case");
 	}
 	
-	@Test(priority = 389)
+	@Test
 	public void home()
 	{
 		System.out.println("home Test case");
@@ -33,5 +20,5 @@ public class SingleClassExecution2 {
 	{
 		System.out.println("logout Test case");
 	}
-
+	
 }

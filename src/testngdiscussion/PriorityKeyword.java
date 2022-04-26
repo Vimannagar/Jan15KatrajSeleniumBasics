@@ -2,7 +2,7 @@ package testngdiscussion;
 
 import org.testng.annotations.Test;
 
-public class SingleClassExecution2 {
+public class PriorityKeyword {
 	
 	@Test(priority = 2)
 	public void login()
