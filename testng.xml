@@ -8,4 +8,6 @@
       <class name="testngdiscussion.TestClass1"/>
     </classes>
   </test> <!-- Test -->
+  
+   
 </suite> <!-- Suite -->

@@ -1,5 +1,6 @@
 package testngdiscussion;
 
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.Test;
 
 public class TestClass2 {
@@ -19,6 +20,11 @@ public class TestClass2 {
 	public void logout()
 	{
 		System.out.println("logout Test case");
+	}
+	@AfterTest
+	public void afterTest()
+	{
+		System.out.println("After Test method");
 	}
 	
 }
