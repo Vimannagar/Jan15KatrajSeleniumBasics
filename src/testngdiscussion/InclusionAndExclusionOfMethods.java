@@ -5,20 +5,20 @@ import org.testng.annotations.Test;
 public class InclusionAndExclusionOfMethods {
 	
 	
-	@Test
+	@Test(priority = 1)
 	public void profile()
 	{
 		System.out.println("Profile Test case");
 	}
 	
 	
-	@Test(enabled = false)
+	@Test(priority = 2)
 	public void login()
 	{
 		System.out.println("Login Test case");
 	}
 	
-	@Test
+	@Test(priority = 3)
 	public void home()
 	{
 		System.out.println("Home test case");
