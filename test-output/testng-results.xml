@@ -1,23 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="2" failed="2" skipped="1">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-04-28T08:50:28 IST" name="Default suite" finished-at="2022-04-28T08:50:50 IST" duration-ms="22577">
+  <suite started-at="2022-04-29T08:51:25 IST" name="Suite" finished-at="2022-04-29T08:51:25 IST" duration-ms="209">
     <groups>
     </groups>
-    <test started-at="2022-04-28T08:50:28 IST" name="Default test" finished-at="2022-04-28T08:50:50 IST" duration-ms="22577">
-      <class name="testngdiscussion.AssertionsInTestNG">
-        <test-method signature="verifyUrl()[pri:0, instance:testngdiscussion.AssertionsInTestNG@6253c26]" started-at="2022-04-28T08:50:28 IST" name="verifyUrl" finished-at="2022-04-28T08:50:50 IST" duration-ms="22506" status="FAIL">
+    <test started-at="2022-04-29T08:51:25 IST" name="Listener test " finished-at="2022-04-29T08:51:25 IST" duration-ms="209">
+      <class name="testngdiscussion.TestNGTestClassForListeners">
+        <test-method signature="login()[pri:0, instance:testngdiscussion.TestNGTestClassForListeners@67f639d3]" started-at="2022-04-29T08:51:25 IST" name="login" finished-at="2022-04-29T08:51:25 IST" duration-ms="16" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[Test case is failed please file a bug expected [true] but found [false]]]>
+              <![CDATA[expected [true] but found [false]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: Test case is failed please file a bug expected [true] but found [false]
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
 at org.testng.Assert.fail(Assert.java:99)
 at org.testng.Assert.failNotEquals(Assert.java:1037)
 at org.testng.Assert.assertTrue(Assert.java:45)
-at testngdiscussion.AssertionsInTestNG.verifyUrl(AssertionsInTestNG.java:29)
+at org.testng.Assert.assertTrue(Assert.java:55)
+at testngdiscussion.TestNGTestClassForListeners.login(TestNGTestClassForListeners.java:14)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -51,8 +52,96 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </exception> <!-- java.lang.AssertionError -->
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- verifyUrl -->
-      </class> <!-- testngdiscussion.AssertionsInTestNG -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+        </test-method> <!-- login -->
+        <test-method signature="dashBoard()[pri:0, instance:testngdiscussion.TestNGTestClassForListeners@67f639d3]" started-at="2022-04-29T08:51:25 IST" name="dashBoard" finished-at="2022-04-29T08:51:25 IST" duration-ms="7" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dashBoard -->
+        <test-method signature="logout()[pri:0, instance:testngdiscussion.TestNGTestClassForListeners@67f639d3]" started-at="2022-04-29T08:51:25 IST" name="logout" finished-at="2022-04-29T08:51:25 IST" duration-ms="12" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:819)
+at org.testng.Assert.assertEquals(Assert.java:829)
+at testngdiscussion.TestNGTestClassForListeners.logout(TestNGTestClassForListeners.java:40)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+        <test-method signature="profile()[pri:0, instance:testngdiscussion.TestNGTestClassForListeners@67f639d3]" started-at="2022-04-29T08:51:25 IST" name="profile" finished-at="2022-04-29T08:51:25 IST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- profile -->
+        <test-method signature="home()[pri:0, instance:testngdiscussion.TestNGTestClassForListeners@67f639d3]" started-at="2022-04-29T08:51:25 IST" name="home" finished-at="2022-04-29T08:51:25 IST" depends-on-methods="testngdiscussion.TestNGTestClassForListeners.login" duration-ms="0" status="SKIP">
+          <exception class="java.lang.Throwable">
+            <message>
+              <![CDATA[Method TestNGTestClassForListeners.home()[pri:0, instance:testngdiscussion.TestNGTestClassForListeners@67f639d3] depends on not successfully finished methods]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.Throwable: Method TestNGTestClassForListeners.home()[pri:0, instance:testngdiscussion.TestNGTestClassForListeners@67f639d3] depends on not successfully finished methods
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:102)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.Throwable -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- home -->
+      </class> <!-- testngdiscussion.TestNGTestClassForListeners -->
+    </test> <!-- Listener test  -->
+  </suite> <!-- Suite -->
 </testng-results>

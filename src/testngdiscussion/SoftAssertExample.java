@@ -4,10 +4,11 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.Assert;
 import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
 
-public class AssertionsInTestNG {
+public class SoftAssertExample {
 	
-	@Test(enabled = false)
+	@Test
 	public void verifyUrl()
 	{
 
@@ -26,34 +27,18 @@ public class AssertionsInTestNG {
 		 
 		boolean ispresent = url.contains(expectedurl);
 		
-		Assert.assertTrue(ispresent, "Test case is failed please file a bug");
+		SoftAssert sa = new SoftAssert();
+				
+		sa.assertTrue(ispresent, "Test case is failed please file a bug");
 		
-		System.out.println("After assertion statement");
+		System.out.println("After assertion statement 1");
+		
+		
+		System.out.println("After assertion statement 2");
+		
+		sa.assertAll();
 		
 	
 	}
-	
-	@Test
-	public void verifyValues()
-	{
-		String actualvalue ="Velocity";
-		
-		String expectedvalue = "velocity";
-		
-		Assert.assertEquals(actualvalue, expectedvalue);
-		
-		
-		System.out.println("After assertion statement");
-	}
-	
-	@Test
-	public void assertFalseCondition()
-	{		
-		Assert.assertFalse(false, "Test case gets fail");
-	}
-	
-	
-	
-	
 
 }
