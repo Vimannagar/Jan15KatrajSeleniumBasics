@@ -1,10 +1,14 @@
 package testngdiscussion;
 
+import java.io.IOException;
+
 import org.testng.ITestContext;
 import org.testng.ITestListener;
 import org.testng.ITestResult;
 
-public class ListenerClass implements ITestListener
+import utility.ScreenShot;
+
+public class ListenerClass extends KiteLogin implements ITestListener
 
 {
 
@@ -21,6 +25,15 @@ public class ListenerClass implements ITestListener
 	@Override
 	public void onTestFailure(ITestResult result) {
 		System.out.println("Test case Failed :"+result.getName());
+		try {
+			ScreenShot.captureScreenshot(driver, result.getName());
+		} catch (IOException e) {
+			
+			System.out.println("Exception occured while taking screenshot");
+		}
+		
+		
+		
 	}
 
 	@Override
