@@ -12,16 +12,16 @@ public class LoginPageAdvance {
 
 	WebDriver driver;
 	@FindBy(xpath ="//*[@id='userid']")
-	WebElement username;
+	private WebElement username;
 	
 	@FindBy(xpath ="//*[@id='password']")
-	WebElement password;
+	private WebElement password;
 	
 	@FindBy(xpath ="//*[@type='submit']")
-	WebElement loginbutton;
+	private WebElement loginbutton;
 	
 	@FindBy(xpath ="//*[@id='pin']")
-	WebElement pintextfield;
+	private WebElement pintextfield;
 	
 	
 

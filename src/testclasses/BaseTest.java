@@ -6,15 +6,18 @@ import org.testng.annotations.AfterSuite;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.BeforeSuite;
 
+import pages.DashBoard;
 import pages.LoginPage;
 import pages.LoginPageAdvance;
 
 public class BaseTest {
 	static WebDriver driver;
 	LoginPageAdvance lp;
+	DashBoard db;
+	
 	@BeforeSuite
 	public void initBrowser() {
-		System.setProperty("webdriver.chrome.driver", "E:\\desktop\\Katraj\\15 Jan\\Selenium\\chromedriver.exe");
+		System.setProperty("webdriver.chrome.driver", "E:\\desktop\\Katraj\\15 Jan\\Selenium\\Chromedriver 101\\chromedriver.exe");
 
 		driver = new ChromeDriver();// chrome browser will get open
 
@@ -36,6 +39,7 @@ public class BaseTest {
 	public void objectCreation()
 	{
 		 lp = new LoginPageAdvance(driver);
+		 db = new DashBoard(driver);
 	}
 
 }

@@ -12,6 +12,15 @@
           <include name="objectCreation"/>
         </methods>
       </class> <!-- testclasses.LoginPageTest -->
+      <class name="testclasses.DashBoardTest">
+        <methods>
+          <include name="searchValidation"/>
+          <include name="initBrowser"/>
+          <include name="buySharesValidation"/>
+          <include name="tearDown"/>
+          <include name="objectCreation"/>
+        </methods>
+      </class> <!-- testclasses.DashBoardTest -->
     </classes>
   </test> <!-- BuySellShare(failed) -->
 </suite> <!-- Failed suite [Kite zerodha] -->
